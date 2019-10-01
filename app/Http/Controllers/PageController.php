@@ -13,4 +13,14 @@ class PageController extends Controller
 
 		return view('home.ppic', compact('formulations'));
 	}
+
+
+	public function postPpic(Request $request)
+	{
+		$batch = $request->batch;
+		$date = $request->date;
+		$formulations = Formulation::orderBy('name')->get();
+		$formulation = Formulation::find($request->formulations);
+		return redirect()->route('ppic', compact('formulations', 'batch', 'formulation', 'date'));
+	}
 }

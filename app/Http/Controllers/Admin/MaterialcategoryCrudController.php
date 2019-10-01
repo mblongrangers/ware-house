@@ -27,11 +27,12 @@ class MaterialcategoryCrudController extends CrudController
         $this->crud->setFromDb();
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
+         $this->crud->enableExportButtons();
         $this->crud->addColumn([
            'name' => "url",
            'label' => "Jumlah Bahan Baku /Kg",
            'type' => "model_function",
-           'decimals' => 2,
+           'decimals' => 3,
            'function_name' => 'getMaterialsQuantity'
         ]);
     }

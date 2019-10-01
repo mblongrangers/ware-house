@@ -27,6 +27,7 @@ class MaterialCrudController extends CrudController
         // $this->crud->setFromDb();
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
+         $this->crud->enableExportButtons();
         $this->crud->addField([
            'name' => 'code',
            'label' => 'Kode Bahan Baku',
@@ -61,7 +62,7 @@ class MaterialCrudController extends CrudController
            'name' => 'quantity',
            'label' => 'Jumlah Bahan Baku /Kg',
            'type' => 'number',
-           'decimals' => 2,
+           'decimals' => 3,
         ]);
         $this->crud->addColumn([
             'type' => "select",

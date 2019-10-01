@@ -8,6 +8,13 @@
     <fieldset>
       <legend>Discount</legend>
       <div class="form-group">
+        <label class="col-sm-3 control-label" for="card-holder-name">Tanggal</label>
+        <div class="col-sm-6">
+          <input type="date">
+        </div>
+      </div>
+      
+      <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name">Nama Produk</label>
         <div class="col-sm-6">
           <input type="text" class="form-control" name="card-holder-name" id="card-holder-name" placeholder="Nama Produk">

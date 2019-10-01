@@ -15,9 +15,7 @@ class CreateSellsTable extends Migration
     {
         Schema::create('sells', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->tinyInteger('pcs')->unsigned();
-            $table->enum('sku', ['4', '5', '6', '7']);
-            $table->tinyInteger('total')->unsigned();
+            $table->string('name', 72);
             $table->timestamps();
         });
     }

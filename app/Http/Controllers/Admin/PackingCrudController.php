@@ -261,6 +261,7 @@ class PackingCrudController extends CrudController
         $this->crud->addColumn([
            'name' => 'description',
            'label' => 'Keterangan',
+           'limit' => 250,
         ]);
     }
 

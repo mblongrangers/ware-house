@@ -77,6 +77,13 @@ class ProductSeeder extends Seeder
             'category_id' => Category::first()->id,
         ]);
         Product::create([
+            'code' => 'CC400',
+            'name' => 'CHOCO BITZ CHIPS (Dus 1/40/40gr)',
+            'quantity' => 0,
+            'price' => 10000,
+            'category_id' => Category::first()->id,
+        ]);
+        Product::create([
             'code' => 'CC4001',
             'name' => 'CHOCO CHIPS (Dus 1/40/40gr)',
             'quantity' => 0,
@@ -154,6 +161,20 @@ class ProductSeeder extends Seeder
             'category_id' => Category::first()->id,
         ]);
         Product::create([
+            'code' => 'GD200',
+            'name' => 'GOLDEN COKLAT (Renceng 1/100/14gr)',
+            'quantity' => 0,
+            'price' => 10000,
+            'category_id' => Category::first()->id,
+        ]);
+        Product::create([
+            'code' => 'GM200',
+            'name' => 'GOLDEN MIX (Renceng 1/100/14gr)',
+            'quantity' => 0,
+            'price' => 10000,
+            'category_id' => Category::first()->id,
+        ]);
+        Product::create([
             'code' => 'GD2001',
             'name' => 'GOLDEN BALL 500 (Renceng 1/100/14gr)',
             'quantity' => 0,
@@ -170,6 +191,13 @@ class ProductSeeder extends Seeder
         Product::create([
             'code' => 'GD1201',
             'name' => 'GOLDEN BALL TOPLES (Toples 1/12/100pcs)',
+            'quantity' => 0,
+            'price' => 10000,
+            'category_id' => Category::first()->id,
+        ]);
+        Product::create([
+            'code' => 'GDP121',
+            'name' => 'GOLDEN PANDA MAS (TOPLES 1/12/100PCS)',
             'quantity' => 0,
             'price' => 10000,
             'category_id' => Category::first()->id,

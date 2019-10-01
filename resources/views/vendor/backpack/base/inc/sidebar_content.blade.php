@@ -8,7 +8,6 @@
 	<li><a href="{{ backpack_url('good') }}"><i class="fa fa-th-large"></i> <span>{{ "Goods" }}</span></a></li>
 	<li><a href="{{ backpack_url('production') }}"><i class="fa fa-cogs"></i> <span>{{ "Production" }}</span></a></li>
 	<li><a href="{{ backpack_url('packing') }}"><i class="fa fa-dropbox"></i> <span>{{ "Packing" }}</span></a></li>
-	<li><a href="{{ backpack_url('sell') }}"><i class="fa fa-money"></i> <span>{{ "Penjualan" }}</span></a></li>
 	<li><a href="{{ backpack_url('material') }}"><i class="fa fa-bar-chart"></i> <span>{{ "Bahan Baku" }}</span></a></li>
 	<li><a href="{{ backpack_url('materialcategory') }}"><i class="fa fa-database"></i> <span>{{ "Kategori Bahan Baku" }}</span></a></li>
 @endif

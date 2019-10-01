@@ -16,7 +16,7 @@ class CreateCompositionsTable extends Migration
         Schema::create('compositions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('materialcategory_id');
-            $table->float('quantity', 6, 2);
+            $table->float('quantity', 7, 3);
             $table->foreign('materialcategory_id')->references('id')->on('materialcategories');
             $table->timestamps();
         });

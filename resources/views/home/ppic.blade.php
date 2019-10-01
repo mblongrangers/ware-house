@@ -3,14 +3,16 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
+<br>
 <div class="container">
-  <form class="form-horizontal" role="form">
+  <form action="{{ route('page.postPpic') }}" class="form-horizontal" method="post" role="form">
+    @csrf
     <fieldset>
       <legend>Formulasi Produk</legend>
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name">Tanggal</label>
         <div class="col-sm-6">
-          <input type="date">
+          <input type="date" name="date">
         </div>
       </div>
 
@@ -19,7 +21,7 @@
         <div class="col-sm-6">
           <select name="formulations">
             @foreach($formulations as $formulation)
-                <option>{{ $formulation->name}}</option>
+                <option value="{{ $formulation->id }}">{{ $formulation->name}}</option>
             @endforeach
           </select>
         </div>
@@ -28,15 +30,22 @@
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-number">Batch</label>
         <div class="col-sm-3">
-          <input type="text" class="form-control" name="cvv" id="cvv" placeholder="Batch">
+          <input type="text" class="form-control" name="batch" placeholder="Batch">
         </div>
       </div>
 
       <div class="col-sm-offset-3 col-sm-9">
-        <a href="" class="btn btn-success">Submit</a>
+        <input type="submit" class="btn btn-primary" value="Submit">
 
         <a href="{{ route('welcome') }}" class="btn btn-success">Cancel</a>
       </div>
     </fieldset>
   </form>
+  <br>
+  <br>
+
+  @if (app('request')->input('formulation'))
+    @include('home._result')
+  @endif
+
 </div>

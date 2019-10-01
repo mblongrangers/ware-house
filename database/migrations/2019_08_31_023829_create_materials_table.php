@@ -17,7 +17,7 @@ class CreateMaterialsTable extends Migration
             $table->increments('id');
             $table->string('code', 10)->unique();
             $table->string('name', 72);
-            $table->float('quantity')->unsigned()->default(0);
+            $table->float('quantity', 7, 3);
             $table->timestamps();
         });
     }

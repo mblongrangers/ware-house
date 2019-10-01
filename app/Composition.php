@@ -14,4 +14,9 @@ class Composition extends Model
     {
         return $this->belongsTo(Formulation::class);
     }
+
+    public function materialCategory()
+    {
+    	return $this->belongsTo(MaterialCategory::class, 'materialcategory_id');
+    }
 }

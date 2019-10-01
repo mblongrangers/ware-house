@@ -12,4 +12,9 @@ class MaterialCategory extends Model
 	{
 		return $this->hasMany(Material::class, 'materialcategory_id');
 	}
+
+	public function status($required)
+	{
+		return $this->materials->sum('quantity') >= $required ? 'Tersedia' : 'Tidak Tersedia';	
+	}
 }

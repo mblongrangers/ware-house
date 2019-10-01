@@ -1,21 +1,12 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
 Route::get('/ppic', 'PageController@ppic')->name('ppic');
+Route::post('/ppic', 'PageController@postPpic')->name('page.postPpic');
 
 Route::get('/discount', function () {
     return view('home.discount');
