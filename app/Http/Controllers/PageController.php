@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Formulation;
+use App\Product;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -21,6 +22,14 @@ class PageController extends Controller
 		$date = $request->date;
 		$formulations = Formulation::orderBy('name')->get();
 		$formulation = Formulation::find($request->formulations);
+
 		return redirect()->route('ppic', compact('formulations', 'batch', 'formulation', 'date'));
+	}
+
+	public function discount()
+	{
+		$sells = Product::orderBy('name')->get();
+
+		return view('home.discount', compact('Products'));
 	}
 }

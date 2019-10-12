@@ -16,109 +16,109 @@ class MaterialSeeder extends Seeder
         Material::create([
     		'code' => 'GD2361',
     		'name' => 'ACTIMALT DRIED RM C50 EX MUNTONS)',
-    		'quantity' => 0,
+    		'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
     	]);
     	Material::create([
     		'code' => 'GD1351',
     		'name' => 'AJI PLUS',
-    		'quantity' => 0,
+    		'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
     	]);
         Material::create([
             'code' => 'GD1298',
             'name' => 'ALKOHOL 96% FOOD GRADE',
-            'quantity' => 0,
+            'quantity' => 30,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2144',
             'name' => 'ALKOHOL TEKNIS 96%',
-            'quantity' => 0,
+            'quantity' => 40,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1372',
             'name' => 'AMF PAIL ANCHOR',
-            'quantity' => 0,
+            'quantity' => 60,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1287',
             'name' => 'AMF VIV HOLLAND',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1261',
             'name' => 'AMIJEL 121001',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2037',
             'name' => 'AMMONIUM BICARBONATE',
-            'quantity' => 0,
+            'quantity' => 20,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2369',
             'name' => 'AMMONIUM BICARBONATE EX. NISSAN, JEPANG',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1275',
             'name' => 'AMMONIUM BICARBONATE EX. WEIFANG, CHINA',
-            'quantity' => 0,
+            'quantity' => 40,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1391',
             'name' => 'ANTIOKSDIAN (SAPP PURON)',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2375',
             'name' => 'APICHOC',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2374',
             'name' => 'APICOTE',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2368',
             'name' => 'ASAM JAWA POWDER',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD2236',
             'name' => 'BAKER MIX',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1296',
             'name' => 'BANANA SD POWDER 10001223',
-            'quantity' => 0,
+            'quantity' => 100,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1395',
             'name' => 'BEESWAX (SAK @25 KG)',
-            'quantity' => 0,
+            'quantity' => 100,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([
             'code' => 'GD1242',
             'name' => 'BERAS PECAH (RICE GRIT) MESH 24 # (SAK @25)',
-            'quantity' => 0,
+            'quantity' => 50,
             'materialcategory_id' => MaterialCategory::first()->id,
         ]);
         Material::create([

@@ -29,7 +29,7 @@ class MaterialcategoryCrudController extends CrudController
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
          $this->crud->enableExportButtons();
         $this->crud->addColumn([
-           'name' => "url",
+           'name' => "quantity",
            'label' => "Jumlah Bahan Baku /Kg",
            'type' => "model_function",
            'decimals' => 3,

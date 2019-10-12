@@ -10,8 +10,7 @@ class Sell extends Model
     use CrudTrait;
     protected $table = 'sells';
     protected $fillable = [
-        'pcs',
-        'total',
+        'name',
         'product_id'
 
     ];

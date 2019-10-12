@@ -19,7 +19,7 @@
       <div class="form-group">
         <label class="col-sm-3 control-label" for="card-holder-name">Nama Produk</label>
         <div class="col-sm-6">
-          <select name="formulations">
+          <select name="formulations" id="formulation">
             @foreach($formulations as $formulation)
                 <option value="{{ $formulation->id }}">{{ $formulation->name}}</option>
             @endforeach
@@ -49,3 +49,9 @@
   @endif
 
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#formulation').val({{ app('request')->input('formulation') }})
+  });
+</script>

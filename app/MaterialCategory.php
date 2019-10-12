@@ -17,4 +17,14 @@ class MaterialCategory extends Model
 	{
 		return $this->materials->sum('quantity') >= $required ? 'Tersedia' : 'Tidak Tersedia';	
 	}
+
+	public function isAvailable($required)
+	{
+		return $this->status($required) == 'Tersedia';	
+	}
+
+	public function schedule()
+    {
+        return $this->belongsToMany(Schedule::class);
+    }
 }

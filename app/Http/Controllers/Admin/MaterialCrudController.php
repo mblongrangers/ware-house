@@ -38,7 +38,7 @@ class MaterialCrudController extends CrudController
         ]);
         $this->crud->addField([
            'name' => 'quantity',
-           'label' => 'Jumlah Bahan Baku /Kg',
+           'label' => 'Jumlah Bahan Baku /Gr',
            'type' => 'number',
            'attributes' => ["step" => "any"], // allow decimals
         ]);
@@ -60,7 +60,7 @@ class MaterialCrudController extends CrudController
         ]);
         $this->crud->addColumn([
            'name' => 'quantity',
-           'label' => 'Jumlah Bahan Baku /Kg',
+           'label' => 'Jumlah Bahan Baku /Gr',
            'type' => 'number',
            'decimals' => 3,
         ]);

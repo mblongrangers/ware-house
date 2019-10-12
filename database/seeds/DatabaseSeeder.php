@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         DB::table('roles')->delete();
         DB::table('products')->delete();
         DB::table('categories')->delete();
+        DB::table('formulations')->delete();
 
         $this->call(RolesTableSeeder::class);
         $this->call(MonarreAdminSeeder::class);
@@ -27,5 +28,6 @@ class DatabaseSeeder extends Seeder
         $this->call(GoodTableSeeder::class);
         $this->call(MaterialCategorySeeder::class);
         $this->call(MaterialSeeder::class);
+        $this->call(FormulationTableSeeder::class);
     }
 }

@@ -25,7 +25,7 @@
                         </div>
                         <div>
                         <a href="{{ backpack_url('material') }}" class="btn btn-primary px-5 py-3 mt-3">Gudang</a>
-                        <a href="{{ ('discount') }}" class="btn btn-primary px-5 py-3 mt-3">Diskon</a>
+                        <a href="{{ route('discount') }}" class="btn btn-primary px-5 py-3 mt-3">Diskon</a>
                         </div>
                         <div>
                         <a href="{{ route('ppic') }}" class="btn btn-primary px-5 py-3 mt-3">PPIC</a>
@@ -53,7 +53,7 @@
                         <p><a href="{{ backpack_url('production') }}" class="btn btn-primary px-5 py-3 mt-3">Produksi</a></p>
                         <p><a href="{{ backpack_url('packing') }}" class="btn btn-primary px-5 py-3 mt-3">Packing</a></p>
                         <p><a href="{{ backpack_url('material') }}" class="btn btn-primary px-5 py-3 mt-3">Gudang</a></p>
-                        <p><a href="{{ backpack_url('discount') }}" class="btn btn-primary px-5 py-3 mt-3">Diskon</a></p>
+                        <p><a href="{{ route('discount') }}" class="btn btn-primary px-5 py-3 mt-3">Diskon</a></p>
                         <p><a href="{{ route('ppic') }}" class="btn btn-primary px-5 py-3 mt-3">PPIC</a></p>
                     </div>
                   </div>

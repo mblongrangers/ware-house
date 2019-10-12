@@ -13,82 +13,76 @@ class MaterialCategorySeeder extends Seeder
     public function run()
     {
         MaterialCategory::create([
-        	'name' => 'AMBIC'
+        	'name' => 'TEPUNG TERIGU'
         ]);
         MaterialCategory::create([
-            'name' => 'KEJU'
-        ]);
-        MaterialCategory::create([
-            'name' => 'MINYAK GORENG KELAPA'
-        ]);
-        MaterialCategory::create([
-            'name' => 'MINYAK GORENG SAWIT'
-        ]);
-        MaterialCategory::create([
-            'name' => 'MARGARINE'
+            'name' => 'MARGARIN'
         ]);
         MaterialCategory::create([
             'name' => 'PASTA COKLAT'
         ]);
         MaterialCategory::create([
-            'name' => 'VANILIN'
-        ]);
-        MaterialCategory::create([
-            'name' => 'TAPIOKA'
-        ]);
-        MaterialCategory::create([
-            'name' => 'GULA HALUS'
-        ]);
-        MaterialCategory::create([
-            'name' => 'GARAM HALUS'
-        ]);
-        MaterialCategory::create([
-            'name' => 'CMP/CCP'
-        ]);
-        MaterialCategory::create([
-            'name' => 'BAKERKING'
-        ]);
-        MaterialCategory::create([
-            'name' => 'SUSU PROLAND'
-        ]);
-        MaterialCategory::create([
-            'name' => 'SIKLAMAT'
-        ]);
-        MaterialCategory::create([
-            'name' => 'SAPP'
-        ]);
-        MaterialCategory::create([
-            'name' => 'FLV. SUSU'
-        ]);
-        MaterialCategory::create([
-            'name' => 'FLV. PANDAN'
-        ]);
-        MaterialCategory::create([
-            'name' => 'MESIS / CHOCOCHIPS'
-        ]);
-        MaterialCategory::create([
-            'name' => 'FC. APPLE GREEN'
-        ]);
-        MaterialCategory::create([
-            'name' => 'SOBIC'
-        ]);
-        MaterialCategory::create([
-            'name' => 'GLUKOS'
-        ]);
-        MaterialCategory::create([
-            'name' => 'SOYA'
-        ]);
-        MaterialCategory::create([
-            'name' => 'WHEY'
-        ]);
-        MaterialCategory::create([
-            'name' => 'TERIGU'
-        ]);
-        MaterialCategory::create([
-            'name' => 'PREMIX'
+            'name' => 'GULA'
         ]);
         MaterialCategory::create([
             'name' => 'SHORTENING'
+        ]);
+        MaterialCategory::create([
+            'name' => 'TEPUNG TAPIOKA'
+        ]);
+        MaterialCategory::create([
+            'name' => 'GLUKOSA'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PENGEMBANG'
+        ]);
+        MaterialCategory::create([
+            'name' => 'LESITIN'
+        ]);
+        MaterialCategory::create([
+            'name' => 'GARAM'
+        ]);
+        MaterialCategory::create([
+            'name' => 'TELUR'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX RM'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX CHOCOBITZ'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX EMULSI'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX L50'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX D'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX LCHo3'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX Butman'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX LCHo1'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX LCHo4'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX Biang'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX HFS'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX L550'
+        ]);
+        MaterialCategory::create([
+            'name' => 'PREMIX OLY'
         ]);
     }
 }
