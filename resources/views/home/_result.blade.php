@@ -39,7 +39,7 @@
   </tbody>
 </table>
 
-@if (true)
+@if ($show)
 <form action="{{ route('schedule.store') }}" method="post">
   @csrf
 

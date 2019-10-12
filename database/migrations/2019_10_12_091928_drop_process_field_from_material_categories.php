@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMaterialCategoriesTable extends Migration
+class DropProcessFieldFromMaterialCategories extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateMaterialCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('materialcategories', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->boolean('process')->default(0);
-            $table->timestamps();
+        Schema::table('materialcategories', function (Blueprint $table) {
+            $table->dropColumn('process');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateMaterialCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materialcategories');
+        Schema::table('materialcategories', function (Blueprint $table) {
+            $table->boolean('process')->default(0);
+        });
     }
 }

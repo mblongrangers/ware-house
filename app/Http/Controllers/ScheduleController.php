@@ -48,6 +48,8 @@ class ScheduleController extends Controller
         foreach ($formulation->compositions as $composition) {
             $schedule->materialCategories()->attach(MaterialCategory::find($composition->materialcategory->id), ['sum' => $request->batch * $composition->quantity]);
         }
+
+        return redirect('/');
     }
 
     /**

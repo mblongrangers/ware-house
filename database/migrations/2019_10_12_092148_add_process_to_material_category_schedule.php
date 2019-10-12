@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMaterialCategoriesTable extends Migration
+class AddProcessToMaterialCategorySchedule extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateMaterialCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('materialcategories', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
+        Schema::table('material_category_schedule', function (Blueprint $table) {
             $table->boolean('process')->default(0);
-            $table->timestamps();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateMaterialCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materialcategories');
+        Schema::table('material_category_schedule', function (Blueprint $table) {
+            $table->dropColumn('process');
+        });
     }
 }

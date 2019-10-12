@@ -15,7 +15,7 @@ class MaterialCategory extends Model
 
 	public function status($required)
 	{
-		return $this->materials->sum('quantity') >= $required ? 'Tersedia' : 'Tidak Tersedia';	
+		return ($this->materials->sum('quantity') - $this->schedules->where('process', 0)->sum('pivot.sum')) >= $required ? 'Tersedia' : 'Tidak Tersedia';	
 	}
 
 	public function isAvailable($required)
@@ -26,5 +26,10 @@ class MaterialCategory extends Model
 	public function schedule()
     {
         return $this->belongsToMany(Schedule::class);
+    }
+
+    public function schedules()
+    {
+    	return $this->belongsToMany(Schedule::class)->withPivot('sum');
     }
 }
