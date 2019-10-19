@@ -15,8 +15,11 @@ class CreateSchedulesTable extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->tinyInteger('batch')->unsigned();
             $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('formulation_id');
             $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('formulation_id')->references('id')->on('formulations');
             $table->timestamps();
         });
     }

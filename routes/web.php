@@ -13,6 +13,8 @@ Route::post('/ppic', 'PageController@postPpic')->name('page.postPpic');
 Route::get('/discount', 'PageController@discount')->name('discount');
 
 Route::group(['prefix' => config('backpack.base.route_prefix'), 'middleware' => ['admin'], 'namespace' => 'Admin'], function() {
+	CRUD::resource('materialcategoryschedule', 'MaterialCategoryScheduleCrudController');
+	CRUD::resource('schedule', 'ScheduleCrudController');
 	CRUD::resource('materialcategory', 'MaterialCategoryCrudController');
 	CRUD::resource('material', 'MaterialCrudController');
 	CRUD::resource('sell', 'SellCrudController');

@@ -8,7 +8,7 @@ class Schedule extends Model
 {
 
 	protected $fillable = [
-		'user_id', 'created_at',
+		'user_id', 'created_at', 'updated_at', 'formulation_id', 'batch'
 	];
 
 	public function user()
@@ -19,6 +19,11 @@ class Schedule extends Model
     public function materialCategories()
     {
     	return $this->belongsToMany(MaterialCategory::class)->withPivot('sum');
+    }
+
+    public function formulation()
+    {
+        return $this->belongsTo(Formulation::class);
     }
 
 }

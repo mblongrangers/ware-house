@@ -38,15 +38,22 @@ class ScheduleController extends Controller
      */
     public function store(Request $request)
     {
+        $formulation = Formulation::find($request->formulation);
+        
         $schedule = Schedule::create([
             'user_id' => backpack_user()->id,
             'created_at' => $request->date,
+            'batch' => $request->batch,
+            'formulation_id' => $formulation->id,
         ]);
 
-        $formulation = Formulation::find($request->formulation);
 
         foreach ($formulation->compositions as $composition) {
-            $schedule->materialCategories()->attach(MaterialCategory::find($composition->materialcategory->id), ['sum' => $request->batch * $composition->quantity]);
+            $schedule->materialCategories()->attach(MaterialCategory::find($composition->materialcategory->id), [
+                'sum' => $request->batch * $composition->quantity,
+                'created_at' => $request->date,
+                'updated_at' => $request->date,
+            ]);
         }
 
         return redirect('/');

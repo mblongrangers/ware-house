@@ -10,6 +10,7 @@
 	<li><a href="{{ backpack_url('packing') }}"><i class="fa fa-dropbox"></i> <span>{{ "Packing" }}</span></a></li>
 	<li><a href="{{ backpack_url('material') }}"><i class="fa fa-bar-chart"></i> <span>{{ "Bahan Baku" }}</span></a></li>
 	<li><a href="{{ backpack_url('materialcategory') }}"><i class="fa fa-database"></i> <span>{{ "Kategori Bahan Baku" }}</span></a></li>
+	<li><a href="{{ backpack_url('schedule') }}"><i class="fa fa-folder"></i> <span>{{ "Hasil Formulasi" }}</span></a></li>
 @endif
 
 @if (backpack_user()->hasRole(\App\Role::FINANCE))

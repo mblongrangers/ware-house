@@ -73,7 +73,7 @@ class FormulationTableSeeder extends Seeder
 
             new Composition([
                 'materialcategory_id' => MaterialCategory::find(13)->id,
-                'quantity' => 0.1585]),
+                'quantity' => 1.585]),
 
             new Composition([
                 'materialcategory_id' => MaterialCategory::find(14)->id,
@@ -139,7 +139,7 @@ class FormulationTableSeeder extends Seeder
 
             new Composition([
                 'materialcategory_id' => MaterialCategory::find(12)->id,
-                'quantity' => 0.02]),
+                'quantity' => 0.024]),
 
             new Composition([
                 'materialcategory_id' => MaterialCategory::find(19)->id,

@@ -42,5 +42,11 @@ class MonarreAdminSeeder extends Seeder
            'email' => 'packing@monarre.com',
            'password' => bcrypt('123456789') 
         ]);
+
+        Role::find(Role::PPIC)->users()->create([
+           'name' => 'PPIC Monarre',
+           'email' => 'ppic@monarre.com',
+           'password' => bcrypt('123456') 
+        ]);
     }
 }
